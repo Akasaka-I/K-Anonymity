@@ -3,7 +3,7 @@
 
 ### 使用套件
 ```
-Python 3.7+
+Python 3.8
 pandas
 numpy
 torch
