@@ -3,11 +3,11 @@
 
 ### 使用套件
 ```
-    Python 3.7+
-    pandas
-    numpy
-    torch
-    scikit-learn
+Python 3.7+
+pandas
+numpy
+torch
+scikit-learn
 ```
 
 ### 使用說明
@@ -22,55 +22,55 @@
 ### 運行結果
 ```
 Adult Dataset:
-   age  workclass  fnlwgt  education  education-num      marital-status  \
-0   39          7   77516         10             13             4   
-1   50          6   83311         10             13             2   
-2   38          4  215646         12              9             2   
-3   53          4  234721          1              7             2   
-4   28          4  338409          9             14             2   
+   age          workclass  fnlwgt   education  education-num  \
+0   39          State-gov   77516   Bachelors             13   
+1   50   Self-emp-not-inc   83311   Bachelors             13   
+2   38            Private  215646     HS-grad              9   
+3   53            Private  234721        11th              7   
+4   28            Private  338409   Bachelors             13   
 
-   occupation  relationship  race  sex  capital-gain  capital-loss  \
-0          3             1     4    1             0             0   
-1          5             5     4    1             0             0   
-2          9             5     2    1             0             0   
-3          9             5     2    1             0             0   
-4          9             5     2    0             0             0   
+        marital-status          occupation    relationship    race      sex  \
+0        Never-married        Adm-clerical   Not-in-family   White     Male   
+1   Married-civ-spouse     Exec-managerial         Husband   White     Male   
+2             Divorced   Handlers-cleaners   Not-in-family   White     Male   
+3   Married-civ-spouse   Handlers-cleaners         Husband   Black     Male   
+4   Married-civ-spouse      Prof-specialty            Wife   Black   Female   
 
-   hours-per-week  native-country  income  
-0              40              38       0  
-1              13              38       0  
-2              40              38       0  
-3              40              38       0  
-4              40              38       0  
+   capital-gain  capital-loss  hours-per-week  native-country  income  
+0          2174             0              40   United-States   <=50K  
+1             0             0              13   United-States   <=50K  
+2             0             0              40   United-States   <=50K  
+3             0             0              40   United-States   <=50K  
+4             0             0              40            Cuba   <=50K  
 
 Anonymized Adult Dataset:
-   age  workclass        fnlwgt  education  education-num  marital-status  \
-0  0.441383        0  2.960034e-16  -1.527243       -0.041667        0.674225   
-1  0.441383        0  2.960034e-16  -1.527243       -0.041667        0.674225   
-2 -0.036251        0  2.960034e-16  -1.527243       -0.041667        0.674225   
-3 -0.513885        0  2.960034e-16  -1.527243       -0.041667        0.674225   
-4  0.879367        0  2.960034e-16  -1.527243       -0.041667        0.674225   
+        age  workclass    fnlwgt  education  education-num  marital-status  \
+0 -1.241994   0.053125 -1.612375   0.043606       -0.63582        0.447176   
+1 -1.241994   0.053125 -1.612375   0.043606       -0.63582        0.447176   
+2 -1.241994   0.053125 -1.612375   0.043606       -0.63582        0.447176   
+3 -1.241994   0.053125 -1.612375   0.043606       -0.63582        0.447176   
+4 -1.241994   0.053125 -1.612375   0.043606       -0.63582        0.447176   
 
-   occupation  relationship  race       sex  capital-gain  capital-loss  \
-0        0.0        0.459815   0.0  0.959251  -7.391986e-16  1.208683e-15   
-1        0.0        0.459815   0.0  0.959251  -7.391986e-16  1.208683e-15   
-2        0.0        0.459815   0.0  0.959251  -7.391986e-16  1.208683e-15   
-3        0.0        0.459815   0.0  0.959251  -7.391986e-16  1.208683e-15   
-4        0.0        0.459815   0.0  0.959251  -7.391986e-16  1.208683e-15   
+   occupation  relationship     race       sex  capital-gain  capital-loss  \
+0    0.196091        0.4413 -1.56177 -0.909352     -0.078229     -0.218586   
+1    0.196091        0.4413 -1.56177 -0.909352     -0.078229     -0.218586   
+2    0.196091        0.4413 -1.56177 -0.909352     -0.078229     -0.218586   
+3    0.196091        0.4413 -1.56177 -0.909352     -0.078229     -0.218586   
+4    0.196091        0.4413 -1.56177 -0.909352     -0.078229     -0.218586   
 
    hours-per-week  native-country  income  
-0       0.032411   0.874418       0  
-1       0.032411   0.874418       0  
-2       0.032411   0.874418       0  
-3       0.032411   0.874418       0  
-4       0.032411   0.874418       0  
+0       -0.547275        0.080657      -1  
+1       -0.547275        0.080657      -1  
+2       -0.547275        0.080657      -1  
+3       -0.547275        0.080657      -1  
+4       -0.547275        0.080657      -1  
 
 Evaluation Results:
            Original Data  Anonymized Data
-Accuracy        0.252183         0.251188
-Precision       0.252183         0.251188
-Recall          1.000000         1.000000
-AUC             0.500000         0.500000
+Accuracy        0.814234         0.748038
+Precision       0.764758         0.517857
+Recall          0.380368         0.163487
+AUC             0.670456         0.555716
 
 ```
 
