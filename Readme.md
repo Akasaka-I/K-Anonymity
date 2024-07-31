@@ -13,7 +13,7 @@ scikit-learn
 ### 使用說明
 1. 直接運行main.ipynb
 
-2. main.ipynb的功能包括:\
+2. main.ipynb的功能包括:
 > 讀取和預處理成人數據集\
 > 對資料進行K-anonymity匿名化處理\
 > 使用PyTorch定義和訓練SVM模型\
