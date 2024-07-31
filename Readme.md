@@ -11,13 +11,13 @@ scikit-learn
 ```
 
 ### 使用說明
-1.直接運行main.ipynb
+1. 直接運行main.ipynb
 
-2.main.ipynb的功能包括:
-    讀取和預處理成人數據集
-    對資料進行K-anonymity匿名化處理
-    使用PyTorch定義和訓練SVM模型
-    評估模型性能並打印結果
+2. main.ipynb的功能包括:\
+> 讀取和預處理成人數據集\
+> 對資料進行K-anonymity匿名化處理\
+> 使用PyTorch定義和訓練SVM模型\
+> 評估模型性能並打印結果
 
 ### 數據處理
 這次使用的是Mondrian K-anonymity 算法來處理數據，具體步驟如下:\
